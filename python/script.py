@@ -3,11 +3,12 @@ import json
 import subprocess
 #from PIL import Image
 
+
 subprocess.run(["figlet", "nekofetch"])
 
 ## init url
 
-baseURL = "https://api.waifu.pics/sfw/neko"
+baseURL = "https://api.nekosia.cat/api/v1/images/catgirl"
 result = requests.get(baseURL)
 
 ## write from json and read from it
@@ -16,9 +17,12 @@ with open('request.json', 'wb') as file:
     file.write(result.content)
 
 with open('request.json', 'r') as file:
-    string = json.load(file)
+    result = json.load(file)
 
-#print(image['url']) ## debug
+string = result['image']
+string = string['original']
+
+#print(string['url']) ## debug tool
 
 output = requests.get(string['url'])
 
