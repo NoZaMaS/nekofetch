@@ -20,8 +20,8 @@ s : search for images
 f : display images on feh
 c : clear curently downloaded images
 ```
-<video source="bashdemo.mp4" width="480" height="250" controls></video>
+![](bashdemo.gif)
 
 ## PYTHON SCRIPT
 `python script.py`
-<video source="pythondemo.mp4" width="480" height="250" controls></video>
+![](pythondemo.gif)
