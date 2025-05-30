@@ -29,7 +29,7 @@ echo "Save image? [y/N]"
 read confirm 
 if [[ $confirm == [yYoOsS\n] ]]; 
 then
-  curl -os catgirl$RANDOM.jpg $LINK
+  curl --output catgirl$RANDOM.jpg $LINK
   echo "Saved"
 else
   echo "Process exited"
@@ -47,7 +47,7 @@ clear ()
   echo "Cleared saved pictures"
 }
 
-case "$1" in 
+case "$@" in 
   h) help;;
   s) search;;
   f) show;;
