@@ -20,5 +20,7 @@ s : search for images
 f : display images on feh
 c : clear curently downloaded images
 ```
+![]bashdemo.mp4
+
 ## PYTHON SCRIPT
 `python script.py`
